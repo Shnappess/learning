@@ -9,7 +9,6 @@ function Min(num0, num1){
 		return(num0);
 	};
 };
-
-console.log(`Min(10,100):${Min(10,100)}`);
-console.log(`Min(10,10):${Min(10,10)}`);
-console.log(`Min(10,-100):${Min(10,-100)}`);
+let num0=parseInt(prompt('Введите первое число:'));//Data input
+let num1=parseInt(prompt('Введите второе число:'));//Ввод данных
+console.log(`Min(${num0},${num1}):${Min(num0,num1)}`);

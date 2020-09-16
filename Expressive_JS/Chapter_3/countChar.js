@@ -16,4 +16,13 @@ function countChar(str, chr){
 	return(count);
 };
 
-console.log(`countChar('Hello World','l'):${countChar('Hello World','l')}`);
+let inputString=prompt('Введите строку, в которой будем искать:');
+let soughtChar=prompt('Введите искомый символ:');
+
+if(soughtChar.length!=1){
+	do{
+		soughtChar=prompt('Введите искомый символ(один):');
+	}while(soughtChar.length!=1);
+};
+
+console.log(`countChar('${inputString}','${soughtChar}'):${countChar(inputString,soughtChar)}`);

@@ -15,6 +15,5 @@ function isEven(num) {
 	return(isEven(num-2));//Recursive num handler||Рекурсивный обработчик числа
 };
 
-console.log(`isEven(5): ${isEven(5)}`);
-console.log(`isEven(8): ${isEven(8)}`);
-console.log(`isEven(-10): ${isEven(-10)}`);
+let num=parseInt(prompt('Введите число:'));
+console.log(`isEven(${num}): ${isEven(num)}`);
